@@ -29,7 +29,7 @@ setup(name="djangout",
       description="Buildout recipes for Django",
       long_description="\n".join((README, CHANGELOG)),
       classifiers=[
-        "Development Status :: 2 - Pre-Alpha",
+        "Development Status :: 3 - Alpha",
         "Environment :: Web Environment",
         "Framework :: Buildout",
         "Framework :: Django",
