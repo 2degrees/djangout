@@ -13,3 +13,9 @@ Version 1.0 (2011-07-04)
 
 Updated package information.
 
+
+Version 1.0 (2013-03-08)
+--------------------------------
+
+Updated recipe to work with Django 1.4 (specifically new staticfiles app).
+

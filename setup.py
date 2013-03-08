@@ -56,7 +56,7 @@ setup(name="djangout",
       install_requires=[
         "zc.buildout >= 1.4.0",
         "zc.recipe.egg >= 1.1.0",
-        "Django >= 1.0",
+        "Django >= 1.4",
         ],
       entry_points = """\
         [zc.buildout]

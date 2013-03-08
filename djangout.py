@@ -38,14 +38,15 @@ class AdminMediaRecipe(object):
             # If we don't set the "eggs" option, it will take the part name:
             options['eggs'] = ""
             _LOGGER.debug("Set the 'eggs' option to an empty string")
-        ws = Eggs(buildout, name, options).working_set(["django >= 1.0"])[1]
+        ws = Eggs(buildout, name, options).working_set(["django >= 1.4"])[1]
         for dist in ws:
             working_set.add(dist)
         
         # Finding the path to the media in Django Admin:
         from django import __file__ as django_file
         django_root = path.dirname(django_file)
-        admin_media = path.join(django_root, "contrib", "admin", "media")
+        admin_media = \
+            path.join(django_root, "contrib", "admin", "static", "admin")
         # We found it, let's make it available to other recipes/parts:
         options['admin_media_root'] = admin_media
     
